@@ -1,13 +1,131 @@
-body {
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+.header{
+  width: 100%;
+  line-height: 100px;
+  background-color:#47999C ;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 50px;
+  color: white;
+  box-shadow: 5px 3px 15px -5px rgb(0, 0, 0);
+}
+.main_note{
+  width: 500px;
+  padding: 15px 10px 5px 10px;
+  margin: 20px auto;
+}
+.my_notes h1{
+  color: #34495e;
+}
+.my_notes p{
+  color: grey;
+}
+form{
+  min-height: 40px;
+  color: #ecf0f1;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0, 0,0);
+  border-radius: 10px;
+  position: relative;
+}
+input{
+  width: 100%;
+  line-height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  font-size: bold;
+}
+textarea{
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.MuiButton-root {
+  height:45px;
+  width: 20px;
+  position: absolute;
+  bottom: -28px;
+  left:400px;
+  cursor:pointer;
+  background-color:#47999C;
+  border-radius:50% !important;
+  box-shadow:5px 5px 15px -5px rgba(0,0,0);
+}
+.MuiButton-root .plus_sign{
+  font-size: 45px !important;
+  font-weight: 900;
+  color: #1A8E77;
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
+}
+.MuiButton-root:hover{
+  background:#1A8E77 !important;
+}
+.MuiButton-root:hover .plus_sign{
+  color: #fff;
+  background: transparent;
+}
+.note h1{
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note{
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note p{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.note .btn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #1A8E77;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 15px -10px rgba(0, 0,0);
+  border-radius: 50%;
+}
+.deleteIcon{
+  width: 0.7em;
+  height: 0.7em;
+  color: #1A8E77;
+}
+.note .btn:hover{
+  background-color:#1A8E77;
+}
+.note .btn:hover .deleteIcon{
+  color: #1A8E77;
+}
+footer{
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  margin-top: auto;
+  text-align: center;
+ }
